@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<!-- html -->
+<html>
+<!-- head -->
+<head>
+<title>My soulmate</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+
+<!-- Custom Theme files -->
+<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style --> 
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+<!--meta data-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//meta data-->
+<!-- online fonts -->
+<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- /online fonts -->
+<!-- nav smooth scroll -->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>	
+<!-- //nav smooth scroll -->			
+<!-- Calendar -->
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<script src="js/jquery-ui.js"></script>
+		<script>
+		  $(function() {
+			$( "#datepicker" ).datepicker();
+		 });
+		</script>
+<!-- //Calendar -->			
+<link rel="stylesheet" href="css/intlTelInput.css">
+</head>
+<!-- //head -->
+<!-- body -->
+<body>
+
+<!-- header -->
+<header>
+	<!--  Navigation Start -->
+ <div class="navbar navbar-inverse-blue navbar">
+    <!--<div class="navbar navbar-inverse-blue navbar-fixed-top">-->
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="menu">
+					<a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+						 
+				</div>
+           <div class="pull-right">
+          	<nav class="navbar nav_bottom" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header nav_2">
+		      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">Menu
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		   </div> 
+		   <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+		        <ul class="nav navbar-nav nav_1">
+		            <li class="active"><a href="index.html">Home</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="search.html">Search</a></li>
+		            
+					  <!--<li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
+		              <ul class="dropdown-menu" role="menu">
+		                <li><a href="search.html">Regular Search</a></li>
+		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.html">Search By Profile ID</a></li>
+		                <li><a href="faq.html">Faq</a></li>
+		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		              </ul>
+		            </li>-->
+		            <li><a href="about.html">Membership</a></li>
+		            <li class="last"><a href="contact.html">Contacts</a></li>
+		        </ul>
+		     </div><!-- /.navbar-collapse -->
+		    </nav>
+		   </div> <!-- end pull-right -->
+          <div class="clearfix"> </div>
+        </div> <!-- end container -->
+      </div> <!-- end navbar-inner -->
+    </div> <!-- end navbar-inverse-blue -->
+<!-- ============================  Navigation End ============================ -->
+<script>
+function validate()
+{ 
+var Name = document.register.Name.value;
+var Email = document.register.Email.value;
+var Password = document.register.Password.value;
+if (Name==null || Name=="")
+{ 
+alert("Full Name can't be blank"); 
+return false; 
+}
+else if (Email==null || Email=="")
+{ 
+alert("Email can't be blank"); 
+return false; 
+}
+
+else if(Password.length&amp;lt;6)
+{ 
+alert("Password must be at least 6 characters long."); 
+return false; 
+} 
+
+} 
+</script> 
+</header>
+<!-- /header -->
+
+<div class="w3layouts-banner" id="home">
+<div class="container">
+	
+	<div class="clearfix"></div>
+	<div class="agileits-register">
+		<h3>Register NOW!</h3>
+		<form name="register" method="post" action="reg.php" onsubmit="return validate();" >
+				<div class="w3_modal_body_grid">
+									<span>Profile For:</span>
+					<select id="w3_country" name="pro" type="text" onchange="change_country(this.value)" class="frm-field required">
+						<option name="pro" value="1">Select</option>
+						<option name="pro" value="2">Myself</option>   
+						<option name="pro" value="3">Son</option>   
+						<option name="pro" value="4">Daughter</option>   
+						<option name="pro" value="5">Brother</option>   
+						<option name="pro" value="6">Sister</option>  
+						<option name="pro" value="7">Relative</option>
+						<option name="pro" value="8">Friend</option>						
+					</select>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Name:</span>
+					<input type="text" name="Name" placeholder=" " required=""/>
+				</div>
+				<div class="w3_modal_body_grid">
+					<span>Gender:</span>
+					<div class="w3_gender">
+						<div class="radio">
+							<label ><input type="radio" name="radio" checked><i></i>Male</label>
+						</div>
+						<div class="radio">
+							<label ><input type="radio" name="radio" ><i></i>Female</label>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Date Of Birth:</span>
+					<input class="date" id="datepicker" name="date" type="date" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}" required="" />
+				</div>
+				<div class="w3_modal_body_grid">
+					<span>Religion:</span>
+					<select id="w3_country1" name="rel" type="text" onchange="change_country(this.value)" class="frm-field required"> 
+						<option value="nu1">Select Religion</option>
+						<option value="nu2">Muslim</option>
+						<option value="nu3">Hindu</option>    
+						<option value="nu4">Christian</option>   
+						<option value="nu5">Sikh</option>   
+						<option value="nu6">Jain</option>   
+						<option value="nu7">Buddhist</option>
+						<option value="null">No Religious Belief</option>   						
+					</select>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+				<span>Mobile No:</span>
+				<!-- country codes (ISO 3166) and Dial codes. -->
+					<input id="phone" name="mobile" type="tel">
+				  <!-- Load jQuery from CDN so can run demo immediately -->
+				  <script src="js/intlTelInput.js"></script>
+				  <script>
+					$("#phone").intlTelInput({
+					  // allowDropdown: false,
+					  // autoHideDialCode: false,
+					  // autoPlaceholder: "off",
+					  // dropdownContainer: "body",
+					  // excludeCountries: ["us"],
+					  // formatOnDisplay: false,
+					  // geoIpLookup: function(callback) {
+					  //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+					  //     var countryCode = (resp && resp.country) ? resp.country : "";
+					  //     callback(countryCode);
+					  //   });
+					  // },
+					  // initialCountry: "auto",
+					  // nationalMode: false,
+					  // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+					  // placeholderNumberType: "MOBILE",
+					  // preferredCountries: ['cn', 'jp'],
+					  // separateDialCode: true,
+					  utilsScript: "js/utils.js"
+					});
+				  </script>
+				</div>
+				<div class="w3_modal_body_grid">
+					<span>Email:</span>
+					<input type="email" name="Email" placeholder=" " required=""/>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Password:</span>
+					<input type="password" name="Password" placeholder=" " required=""/>
+				</div>
+				<div class="w3-agree">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="agileits-agree">I have read & agree to the <a href="terms.html">Terms and Conditions</a></label>
+				</div>
+				<input type="submit" value="Register me" /><br>
+				 <?php echo $res; ?>
+				<div class="clearfix"></div>
+				<p class="w3ls-login">Already a member? <a href="#" data-toggle="modal" data-target="#myModal">Login</a></p>
+			</form>
+			<!--<div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $count; ?></div>-->
+		</div>
+		<!-- Modal -->
+				<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+				  <div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>		
+						<h4 class="modal-title">Login to Continue</h4>
+					  </div>
+					  <div class="modal-body">
+						<div class="login-w3ls">
+							<form id="signin" action="login.php" method="post">
+								<label>User Name </label>
+								<input type="text" name="Name" placeholder="Username"  required="">
+								<label>Password</label>
+								<input type="password" name="Password" placeholder="Password" required="">	
+								<div class="w3ls-loginr"> 
+									<input type="checkbox" id="brand" name="checkbox" value="">
+									<span> Remember me ?</span> 
+									<a href="#">Forgot password ?</a>
+								</div>
+								<div class="clearfix"> </div>
+								<input type="submit" name="submit" value="Login">
+								<div class="clearfix"> </div>
+								<div class="social-icons">
+									<ul>  
+										<li><a href="#"><span class="icons"><i class="fa fa-facebook" aria-hidden="true"></i></span><span class="text">Facebook</span></a></li> 
+										<li class="twt"><a href="#"><span class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></span><span class="text">Twitter</span></a></li>  
+									</ul> 
+									<div class="clearfix"> </div>
+								</div>	
+							</form>
+	
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- //Modal -->
+	</div>
+</div>
+<!-- Find your soulmate -->
+	<div class="w3l_find-soulmate text-center">
+		<h3>Find Your Soulmate</h3>
+			<div class="container">
+				<a class="scroll" href="#home">
+					<div class="col-md-3 w3_soulgrid">
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						<h3>Sign Up</h3>
+						<p>Signup for free and Upload your profile</p>
+					</div>
+				</a>
+				<a class="scroll" href="#home">
+					<div class="col-md-3 w3_soulgrid">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<h3>Search</h3>
+						<p>Search for your right partner</p>
+					</div>
+				</a>
+				<a class="scroll" href="#home">
+					<div class="col-md-3 w3_soulgrid">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<h3>Connect</h3>
+						<p>Connect your perfect Match</p>
+					</div>
+				</a>
+				<a class="scroll" href="#home">
+					<div class="col-md-3 w3_soulgrid">
+						<i class="fa fa-comments-o" aria-hidden="true"></i>
+						<h3>Interact</h3>
+						<p>Become a member and start Conversation</p>
+					</div>
+				</a>
+				<div class="clearfix"> </div>
+			</div>
+	</div>
+	<!-- //Find your soulmate -->
+		</div>
+		
+		<!-- featured profiles -->			
+			<div class="w3layouts_featured-profiles">
+				<div class="container">
+				<!-- slider -->
+				<div class="agile_featured-profiles">
+					<h2>About Us</h2>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>	
+					</div>   
+			</div>
+			<!-- //slider -->				
+			</div>
+			<script type="text/javascript" src="js/jquery.flexisel.js"></script><!-- flexisel-js -->	
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: false,
+								autoPlaySpeed: 5000,    		
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems:1
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: { 
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+							
+						});
+					   </script>
+			<!-- //featured profiles -->		   
+					   
+		<!-- mobile-app -->
+			<div class="wthree-mobilaapp main-grid-border">
+				<div class="container">
+					<div class="app">
+						<div class="col-md-6 w3ls_app-left mpl">
+							<h3>Announcement!</h3>
+							<p>Mysoulmate.life was pioneered by offline matchmaking process from 5years , on customer demand we are now with our own brand Mysoulmate.life Launching New Matrimonial web portal- New Phase of website is coming soon with attractive features much more options user friendly and best Online and offline process with attractive memberships.
+
+Soulmate Swayamwar – mysoulmate.life, soon announcing monthly matching matrimonial meet in all cities . Under one roof, you will find Astrology, Exclusive relationship Services, Before Marriage consulting, 100’s of profiles, Meetings, Wedding Services.</p>
+							
+						</div>
+						<div class="col-md-offset-1 col-md-5 app-image">
+							<img src="images/logo.png" alt="">
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<!-- /mobile-app -->
+	
+	
+	
+	<!-- Assisted Service -->
+	<div class="agile-assisted-service text-center">
+		<h4>Assisted Service</h4>
+		<p>Our Relationship Managers have helped thousands of members find their life partners.</p>
+		<a href="assisted_services.html">Know More</a>
+	</div>
+	<!-- //Assisted Service -->
+	
+	
+	
+	<!-- Get started -->
+	<div class="w3layous-story text-center">
+		<div class="container">
+			<h4>Your story is waiting to happen!  <a class="scroll" href="#home">Get started</a></h4>
+		</div>
+	</div>
+	<!-- //Get started -->
+	
+<!-- footer -->
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-info w3-agileits-info">
+				<div class="col-md-4 footer-grids">
+						<h3>Notice</h3>
+						<ul><li>
+Today's By Using this website you are agreeing to website terms & privacy policy. Further your sole intent is to enter into matrimonial alliance & further. Profile information provided on site do not authenticate the profile So you are requested to verify the data. We recommend to check saftey tips & use support to take further help. </li></ul>
+					</div>
+				<div class="col-md-8 address-right">
+					<div class="col-md-4 footer-grids">
+						<h3>Company</h3>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="feedback.html">Feedback</a></li>  
+							<li><a href="help.html">Help</a></li>  
+							<li><a href="tips.html">Safety Tips</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>Quick links</h3>
+						<ul>
+							<li><a href="#">Terms of use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">FAQ</a></li>
+							
+						</ul> 
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>Follow Us on</h3>
+						<section class="social">
+                        <ul>
+							<li><a class="icon fb" href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="icon tw" href="#"><i class="fa fa-twitter"></i></a></li>	
+							<li><a class="icon gp" href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+						</section>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>	
+	<div class="copy-right"> 
+		<div class="container">
+			<p>Copyright © 2018 Mysoulmate . All Rights Reserved  | Design by <a href="http://www.teqit.in" target="_blank">teQIT Services</a> </p>
+		</div>
+	</div> 
+</footer>
+<!-- //footer -->	
+<!-- menu js aim -->
+	<script src="js/jquery.menu-aim.js"> </script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<!-- //menu js aim -->
+	<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+	 		};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+							
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- for smooth scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+	</script>
+	<!-- //for smooth scrolling -->
+
+</body>
+<!-- //body -->
+</html>
+<!-- //html -->

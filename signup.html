@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<!-- html -->
+<html>
+<!-- head -->
+<head>
+<title>My soulmate</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+
+<!-- Custom Theme files -->
+<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style --> 
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+<!--meta data-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//meta data-->
+<!-- online fonts -->
+<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- /online fonts -->
+<!-- nav smooth scroll -->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>	
+<!-- //nav smooth scroll -->			
+<!-- Calendar -->
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<script src="js/jquery-ui.js"></script>
+		<script>
+		  $(function() {
+			$( "#datepicker" ).datepicker();
+		 });
+		</script>
+<!-- //Calendar -->			
+<link rel="stylesheet" href="css/intlTelInput.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
+<!-- body -->
+</head>
+
+<header>
+	<!--  Navigation Start -->
+ <div class="navbar navbar-inverse-blue navbar">
+    <!--<div class="navbar navbar-inverse-blue navbar-fixed-top">-->
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="menu">
+					<a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+						 
+				</div>
+           <div class="pull-right">
+          	<nav class="navbar nav_bottom" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header nav_2">
+		      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">Menu
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		   </div> 
+		   <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+		        <ul class="nav navbar-nav nav_1">
+		            <li class="active"><a href="index.html">Home</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="search.html">Search</a></li>
+		            
+					  <!--<li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
+		              <ul class="dropdown-menu" role="menu">
+		                <li><a href="search.html">Regular Search</a></li>
+		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.html">Search By Profile ID</a></li>
+		                <li><a href="faq.html">Faq</a></li>
+		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		              </ul>
+		            </li>-->
+		             <li><a href="about.html">Membership</a></li>
+		            <li class="last"><a href="contact.html">Contacts</a></li>
+					<li><a href="index.html" class="btn btn-danger" role="button">Logout</a></li>
+		        </ul>
+		     </div><!-- /.navbar-collapse -->
+		    </nav>
+		   </div> <!-- end pull-right -->
+          <div class="clearfix"> </div>
+        </div> <!-- end container -->
+      </div> <!-- end navbar-inner -->
+    </div> <!-- end navbar-inverse-blue -->
+<!-- ============================  Navigation End ============================ -->
+<script>
+function validate()
+{ 
+var Name = document.register.Name.value;
+var Email = document.register.Email.value;
+var Password = document.register.Password.value;
+if (Name==null || Name=="")
+{ 
+alert("Full Name can't be blank"); 
+return false; 
+}
+else if (Email==null || Email=="")
+{ 
+alert("Email can't be blank"); 
+return false; 
+}
+
+else if(Password.length&amp;lt;6)
+{ 
+alert("Password must be at least 6 characters long."); 
+return false; 
+} 
+
+} 
+</script> 
+</header>
+<!-- /header -->
+
+<body>
+
+<form id="regForm" action="us.php"  method="post" enctype="multipart/form-data">
+  <h1>Register Your Profile</h1>
+  <!-- One "tab" for each step in the form: -->
+ <div class="tab"> <fieldset>
+                <h2 class="fs-title">Details</h2><br>
+				<label>First Name: </label>
+                <input type="text" name="fname" placeholder="First Name"/>
+				<label>Last Name: </label>
+                <input type="text" name="lname" placeholder="Last Name"/>
+				<label>Mobile Number: </label>
+                <input type="text" name="phone" placeholder="Phone"/>
+				                   <br><br><p>
+             <label>Please select your Gender:</label>
+             <select id = "gender" name="gender">
+			   <option value = "0">Select</option>
+               <option value = "1">Male</option>
+               <option value = "2">Female</option>
+               <option value = "3">Other</option>
+               
+             </select>
+          </p>
+      
+                       
+				<label>DOB: </label>
+                <input type="date" name="date" placeholder="Date of Birth"/>
+				<br><br><p>
+             <label>Please select your Religion:</label>
+             <select id = "rel" name="rel">
+			   <option value = "0">Select</option>
+               <option value = "1">Hindu</option>
+               <option value = "2">Christian</option>
+               <option value = "3">Muslim</option>
+               
+             </select>
+          </p>
+				<label>Age: </label>
+				<input type="text" name="age" placeholder="Age"/>
+				<label>Height: </label>
+				<input type="text" name="height" placeholder="Height"/>
+				<label>Country: </label>
+				<input type="text" name="country" placeholder="Country"/>
+				<label>State: </label>
+				<input type="text" name="state" placeholder="State"/>
+				<label>District/City: </label>
+				<input type="text" name="city" placeholder="city"/>
+				<label>Mother Tongue: </label>
+				<input type="text" name="mother" placeholder="Mother Tongue"/>
+				
+				 <br><br><p>
+             <label>Please select your Marital Status:</label>
+             <select id = "marital" name="marital">
+			   <option value = "0">Select</option>
+               <option value = "1">Single</option>
+               <option value = "2">Married</option>             
+               
+             </select>
+          </p>
+		  </fieldset></div>
+						
+             <div class="tab">Education & Career:
+   <fieldset> <label>Highest Education: </label>
+				<input type="text" name="edu" placeholder="marital"/>
+				<label>Occupation: </label>
+				<input type="text" name="op" placeholder="marital"/>
+				<label>Annual Income: </label>
+				<input type="text" name="income" placeholder="marital"/>
+				</fieldset>
+  </div>
+  
+  <div class="tab">Horoscope Details:
+    	 <div class="avatar"><label>Select your picture: </label><input type="file" name="image"  /></div>
+		 <br><br><p>
+             <label>Please select your Manglik:</label>
+             <select id = "manglik" name="manglik">
+			   <option value = "0">Select</option>
+               <option value = "1">Does not Matter</option>
+               <option value = "2">No</option> 
+               <option value = "2">Yes</option>  			   
+               
+             </select>
+          </p>
+				 </div>
+</div> 
+				 
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+</body>
+<!-- footer -->
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-info w3-agileits-info">
+				<div class="col-md-4 footer-grids">
+						<h3>Notice</h3>
+						<ul><li>
+Today's By Using this website you are agreeing to website terms & privacy policy. Further your sole intent is to enter into matrimonial alliance & further. Profile information provided on site do not authenticate the profile So you are requested to verify the data. We recommend to check saftey tips & use support to take further help. </li></ul>
+					</div>
+				<div class="col-md-8 address-right">
+					<div class="col-md-4 footer-grids">
+						<h3>Company</h3>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="feedback.html">Feedback</a></li>  
+							<li><a href="help.html">Help</a></li>  
+							<li><a href="tips.html">Safety Tips</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>Quick links</h3>
+						<ul>
+							<li><a href="#">Terms of use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">FAQ</a></li>
+							
+						</ul> 
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>Follow Us on</h3>
+						<section class="social">
+                        <ul>
+							<li><a class="icon fb" href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="icon tw" href="#"><i class="fa fa-twitter"></i></a></li>	
+							<li><a class="icon gp" href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+						</section>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>	
+	<div class="copy-right"> 
+		<div class="container">
+			<p>Copyright © 2018 Mysoulmate . All Rights Reserved  | Design by <a href="http://www.teqit.in" target="_blank">teQIT Services</a> </p>
+		</div>
+	</div> 
+</footer>
+<!-- //footer -->
+</html>
